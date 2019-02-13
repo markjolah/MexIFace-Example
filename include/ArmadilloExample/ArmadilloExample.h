@@ -1,24 +1,26 @@
-/** @file TestArmadillo.h
- * @author Mark J. Olah (mjo\@cs.unm.edu)
- * @date 12-2018
- * @brief A very simple test class for MexIFace.
+/** @file ArmadilloExample.h
+ *  @brief A very simple test C++ class, that will be wrapped by MexIFace
  */
 
-#ifndef MEXIFACE_TEST_ARMADILLO_H
-#define MEXIFACE_TEST_ARMADILLO_H
+#ifndef MEXIFACE_ARMADILLO_EXAMPLE_H
+#define MEXIFACE_ARMADILLO_EXAMPLE_H
 
 #include <armadillo>
 
-class TestArmadillo
+namespace armadillo_example {
+
+class ArmadilloExample
 {
 public:
     using VecT = arma::Col<double>;
-    TestArmadillo(VecT v) : v(v) {}
-    VecT add(const VecT &o) const {return o+v;}
-    VecT ret() const {return v;}
-    void inc(const VecT &o) { v+=o; }
+    ArmadilloExample(VecT v);
+    VecT add(const VecT &o) const;
+    VecT ret() const;
+    void inc(const VecT &o);
 private:
     VecT v;
 };
 
-#endif /* MEXIFACE_TEST_ARMADILLO_H */
+} /* namespace armadillo_example */
+
+#endif /* MEXIFACE_ARMADILLO_EXAMPLE_H */
