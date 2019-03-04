@@ -1,4 +1,4 @@
-# MexIFaceExample-Armadillo
+# MexIFaceExample
 
 This is a fully functional example project using the [MexIFace](http://markjolah.github.io/MexIFace) C++/Matlab interface.
 
@@ -24,11 +24,22 @@ References:
 * [UncommonCMakeModules github](https://github.com/markjolah/UncommonCMakeModules) - CMake modules and toolchains to simplify resolving dependencies, cross-compiling, linking, installing, and exporting of complex MEX modules.
 * [ci-numerical-dependencies github](https://github.com/markjolah/ci-numerical-dependecies) - Scripts for installing Armadillo/BLAS/LAPACk with 64-bit integer support on TravisCI/ubuntu systems.
 
+### Details
+
+The current list of example projects includes a library for solving systems of linear equations over positive-definite symmetric square matricies,
+using the Cholesky decomposition (wikipedia: [Cholesky Decomposition](https://en.wikipedia.org/wiki/Cholesky_decomposition#Applications)).
 
 ## Building and Installation
 
 ### C++-Only library and testing builds
 
+> ./scripts/build.test.sh
+
 ### Matlab Linux
+
+Building for a Matlab environment on Linux is only possible with a development system using older versions of GCC.  For details see [MexIFace: Building](http://localhost:6419/#matlab-and-mex-linking)
+
+> export
+> ./scripts/build.test.sh
 
 ### Matlab Windows

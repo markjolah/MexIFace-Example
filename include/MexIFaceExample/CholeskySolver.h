@@ -29,9 +29,8 @@ class ArmadilloExampleError : public std::exception { };
  *  - Compute the Cholesky decomposition of the internal matrices.
  *  - Solve a set of linear systems using the computed Cholesky decompositions.
  *
- * All computational operations are performed in parallel using OpenMP.
- *
- * We use the OMPExceptionCatcher class prevent any exceptions leaving OpenMP code.
+ * All computational operations are performed in parallel using OpenMP.  We use the OMPExceptionCatcher class to
+ * prevent any exceptions leaving OpenMP code.
  *
  */
 class ArmadilloExample
