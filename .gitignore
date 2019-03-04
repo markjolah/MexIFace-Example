@@ -1,11 +1,19 @@
-.gdb*
-_build
-_install
-_gcc4_9.*
+#Local checkout of gh-pages branch
+_gh-pages
+#Local Build dir-tree
+_build*
+#Local install dir
+_install*
 _win64.*
+_maci64.*
+_gcc4_9.build
+_gcc4_9.install
 _dist
-_travis*
-_matlab_dist*
+_matlab_stubs
+
+.kdev4*
+*.kdev4
+_kdev_build
 
 # Prerequisites
 *.d
@@ -39,3 +47,6 @@ _matlab_dist*
 *.exe
 *.out
 *.app
+*.kate-swp
+
+*.nfs*
